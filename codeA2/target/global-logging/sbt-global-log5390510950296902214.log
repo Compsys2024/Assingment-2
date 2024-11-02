@@ -1,0 +1,26 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/runMain ProgramCounterTester, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / runMain[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 8 Scala sources to /Users/kuskus/Desktop/codeA2/target/scala-2.12/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 80 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/kuskus/Desktop/codeA2/target/scala-2.12/test-classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 61 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.transforms.CheckCombLoops$CombLoopException: : [module ProgramCounter] Combinational loop detected:[0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter.io_programCounter[0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter._T	 @[ProgramCounter.scala 17:27][0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter._GEN_3	 @[ProgramCounter.scala 17:37][0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter.programCounterNext	 @[ProgramCounter.scala 15:22 ProgramCounter.scala 19:26 ProgramCounter.scala 21:26 ProgramCounter.scala 23:26][0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter.io_programCounter	 @[ProgramCounter.scala 14:21 ProgramCounter.scala 26:21][0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mrunMain[0m) firrtl.transforms.CheckCombLoops$CombLoopException: : [module ProgramCounter] Combinational loop detected:[0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter.io_programCounter[0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter._T	 @[ProgramCounter.scala 17:27][0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter._GEN_3	 @[ProgramCounter.scala 17:37][0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter.programCounterNext	 @[ProgramCounter.scala 15:22 ProgramCounter.scala 19:26 ProgramCounter.scala 21:26 ProgramCounter.scala 23:26][0m
+[0m[[0m[31merror[0m] [0m[0mProgramCounter.io_programCounter	 @[ProgramCounter.scala 14:21 ProgramCounter.scala 26:21][0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 15 s, completed 17-10-2024 11:19:31[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
