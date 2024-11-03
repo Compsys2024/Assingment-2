@@ -21,6 +21,7 @@ class Hello extends Module {
   val io = IO(new Bundle {
     val done = Output(Bool ())
     val run = Input(Bool ())
+
     //The following signals are used by the tester to load and dump the memory contents. Do not touch.
     val testerDataMemEnable = Input(Bool ())
     val testerDataMemAddress = Input(UInt (16.W))
@@ -31,7 +32,6 @@ class Hello extends Module {
 
   //Creating components
   val dataMemory = Module(new DataMemory())
-
   val addressCounterReg = RegInit(0.U(17.W))
   val dataReg = RegInit(0.U(32.W))
 

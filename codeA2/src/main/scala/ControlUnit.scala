@@ -4,7 +4,6 @@ import chisel3.util._
 class ControlUnit extends Module {
   val io = IO(new Bundle {
     val instruction = Input(UInt(32.W))
-
     val RegWrite = Output(Bool())
     val Mux1 = Output(Bool())
     val Mux2 = Output(Bool())
@@ -12,9 +11,7 @@ class ControlUnit extends Module {
     val ALUop = Output(UInt(4.W))
     val Branch = Output(Bool())
   })
-
-  val opcode = io.instruction >> 28.U
-
+  val opcode = io.instruction(31,28)
   switch(opcode){
     is (1.U){ //add
       io.RegWrite := 1.B
